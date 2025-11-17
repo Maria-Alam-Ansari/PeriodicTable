@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html and body section */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  background-color: black;
+  cursor: pointer;
+}
+
+/* main heading */
+#heading {
+  text-align: center;
+  margin: 0.3em;
+  font-size: 1rem;
+  color: white;
+}
+
+/* main container */
+.main-container {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: o.5rem;
+}
+
+/* periodic table styling */
+#periodic-table {
+  width: 90vw;
+  height: 85vh;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 0.5rem;
+}
+
+/* div styling */
+.element {
+  border: 1px solid lightgrey;
+  /* border-radius: 1rem; */
+  padding: 0.3rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* dic content styling */
+.number {
+  font-size: 0.8rem;
+}
+
+.symbol {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 0.8rem;
+}
+
+/* specific category styling */
+div[data-category] {
+  transition: all 0.8s ease;
+}
+
+div[data-category="alkali metal"] {
+  border: 2px solid #ff006e;
+  color: #ff006e;
+}
+
+div[data-category="diatomic nonmetal"] {
+  border: 2px solid #3a86ff;
+  color: #3a86ff;
+}
+
+div[data-category="noble gas"] {
+  border: 2px solid #dc2525;
+  color: #dc2525;
+}
+
+div[data-category="metalloid"] {
+  border: 2px solid #00ffc6;
+  color: #00ffc6;
+}
+
+div[data-category="transition metal"] {
+  border: 2px solid #ff073a;
+  color: #ff073a;
+}
+
+div[data-category="post-transition metal"] {
+  border: 2px solid #ff2dd1;
+  color: #ff2dd1;
+}
+
+div[data-category="alkaline earth metal"] {
+  border: 2px solid #ddff00;
+  color: #ddff00;
+}
+
+div[data-category="polyatomic nonmetal"] {
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+}
+
+div[data-category="lanthanide"] {
+  border: 2px solid #39ff14;
+  color: #39ff14;
+}
+
+div[data-category="actinide"] {
+  border: 2px solid #00f5ff;
+  color: #00f5ff;
+}
+
+/* hover effect */
+div[data-category="alkali metal"]:hover {
+  box-shadow: 0 0 15px #ff006e;
+  transform: scale(1.2);
+  background-color: #ff006e;
+  color: black;
+}
+
+div[data-category="diatomic nonmetal"]:hover {
+  box-shadow: 0 0 15px #3a86ff;
+  transform: scale(1.2);
+  background-color: #3a86ff;
+  color: black;
+}
+
+div[data-category="noble gas"]:hover {
+  box-shadow: 0 0 15px #dc2525;
+  transform: scale(1.2);
+  background-color: #dc2525;
+  color: black;
+}
+
+div[data-category="metalloid"]:hover {
+  box-shadow: 0 0 15px #00ffc6;
+  transform: scale(1.2);
+  background-color: #00ffc6;
+  color: black;
+}
+
+div[data-category="transition metal"]:hover {
+  box-shadow: 0 0 15px #ff073a;
+  transform: scale(1.2);
+  background-color: #ff073a;
+  color: black;
+}
+
+div[data-category="post-transition metal"]:hover {
+  box-shadow: 0 0 15px #ff2dd1;
+  transform: scale(1.2);
+  background-color: #ff2dff;
+  color: black;
+}
+
+div[data-category="alkaline earth metal"]:hover {
+  box-shadow: 0 0 15px #ddff00;
+  transform: scale(1.2);
+  background-color: #ddff00;
+  color: black;
+}
+
+div[data-category="polyatomic nonmetal"]:hover {
+  box-shadow: 0 0 15px #ffcc00;
+  transform: scale(1.2);
+  background-color: #ffcc00;
+  color: black;
+}
+
+div[data-category="lanthanide"]:hover {
+  box-shadow: 0 0 15px #39ff14;
+  transform: scale(1.2);
+  background-color: #39ff14;
+  color: black;
+}
+
+div[data-category="actinide"]:hover {
+  box-shadow: 0 0 10px #00f5ff;
+  transform: scale(1.2);
+  background-color: #00f5ff;
+  color: black;
+}
