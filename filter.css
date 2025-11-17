@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0.8rem;
+}
+
+button {
+  padding: 0.5rem;
+  border: none;
+  background-color: black;
+  transition: all 0.8s ease;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+.alkali-button {
+  border: 2px solid #ff006e;
+  color: #ff006e;
+}
+
+.diatomic-button {
+  border: 2px solid #3a86ff;
+  color: #3a86ff;
+}
+
+.noble-button {
+  border: 2px solid #dc2525;
+  color: #dc2525;
+}
+
+.metalloid-button {
+  border: 2px solid #00ffc6;
+  color: #00ffc6;
+}
+
+.transition-button {
+  border: 2px solid #ff073a;
+  color: #ff073a;
+}
+
+.post-transition-button {
+  border: 2px solid #ff2dd1;
+  color: #ff2dd1;
+}
+
+.alkaline-earth-button {
+  border: 2px solid #ddff00;
+  color: #ddff00;
+}
+
+.polyatomic-button {
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+}
+
+.lanthanide {
+  border: 2px solid #39ff14;
+  color: #39ff14;
+}
+
+/* hover effect */
+.alkali-button:hover {
+  background-color: #ff006e;
+  color: black;
+  box-shadow: 0 0 15px #ff006e;
+}
+
+.diatomic-button:hover {
+  background-color: #3a86ff;
+  color: black;
+  box-shadow: 0 0 15px #3a86ff;
+}
+
+.noble-button:hover {
+  background-color: #dc2525;
+  color: black;
+  box-shadow: 0 0 15px #dc2525;
+}
+
+.metalloid-button:hover {
+  background-color: #00ffc6;
+  color: black;
+  box-shadow: 0 0 15px #00ffc6;
+}
+
+.transition-button:hover {
+  background-color: #ff073a;
+  color: black;
+  box-shadow: 0 0 15px #ff073a;
+}
+
+.post-transition-button:hover {
+  background-color: #ff2dff;
+  color: black;
+  box-shadow: 0 0 15px #ff2dd1;
+}
+
+.alkaline-earth-button:hover {
+  background-color: #ddff00;
+  color: black;
+  box-shadow: 0 0 15px #ddff00;
+}
+
+.polyatomic-button:hover {
+  background-color: #ffcc00;
+  color: black;
+  box-shadow: 0 0 15px #ffcc00;
+}
+
+.lanthanide:hover {
+  background-color: #39ff14;
+  color: black;
+  box-shadow: 0 0 15px #39ff14;
+}
+
+.actinide:hover {
+  background-color: #00f5ff;
+  color: black;
+  box-shadow: 0 0 15px #00f5ff;
+}
