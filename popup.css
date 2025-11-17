@@ -1,0 +1,401 @@
+/* popup styling */
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.popup {
+  z-index: 101;
+  height: 35rem;
+  width: 40rem;
+  background-color: white;
+  border-radius: 2rem;
+  position: relative;
+  transition: all 0.8s ease;
+}
+
+.popup-container.active-popup {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.close-popup {
+  position: absolute;
+  top: -2%;
+  right: -2%;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+.popup-symbol {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  padding: 1.6rem;
+  font-size: 1.8rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.8s ease;
+}
+
+.popup-content {
+  font-size: 1.3rem;
+  padding: 3rem;
+}
+
+/* popup symbol styling */
+.popup.alkali-metal .popup-symbol {
+  color: #ff006e;
+  border: 2px solid #ff006e;
+}
+
+.popup.diatomic-nonmetal .popup-symbol {
+  color: #3a86ff;
+  border: 2px solid #3a86ff;
+}
+
+.popup.noble-gas .popup-symbol {
+  color: #dc2525;
+  border: 2px solid #dc2525;
+}
+
+.popup.metalloid .popup-symbol {
+  color: #00ffc6;
+  border: 2px solid #00ffc6;
+}
+
+.popup.transition-metal .popup-symbol {
+  color: #ff073a;
+  border: 2px solid #ff073a;
+}
+
+.popup.post-transition-metal .popup-symbol {
+  color: #ff2dff;
+  border: 2px solid #ff2dff;
+}
+
+.popup.alkaline-earth-metal .popup-symbol {
+  color: #ddff00;
+  border: 2px solid #ddff00;
+}
+
+.popup.polyatomic-nonmetal .popup-symbol {
+  color: #ffcc00;
+  border: 2px solid #ffcc00;
+}
+
+.popup.lanthanide .popup-symbol {
+  color: #39ff14;
+  border: 2px solid #39ff14;
+}
+
+.popup.actinide .symbol {
+  color: #00f5ff;
+  border: 2px solid #00f5ff;
+}
+
+/* popup symbol hover effect */
+.popup.alkali-metal .popup-symbol:hover {
+  background-color: #ff006e;
+  color: black;
+  border: 2px solid black;
+}
+
+.popup.diatomic-nonmetal .popup-symbol:hover {
+  background-color: #3a86ff;
+  color: black;
+  border: 2px solid black;
+}
+
+.popup.noble-gas .popup-symbol:hover {
+  background-color: #dc2525;
+  color: black;
+  border: 2px solid black;
+}
+
+.popup.metalloid .popup-symbol:hover {
+  background-color: #00ffc6;
+  color: black;
+  border: 2px solid black;
+}
+
+.popup.transition-metal .popup-symbol:hover {
+  background-color: #ff073a;
+  color: black;
+  border: 2px solid black;
+}
+
+.popup.post-transition-metal .popup-symbol:hover {
+  background-color: #ff2dff;
+  color: black;
+  border: 2px solid black;
+}
+
+.popup.alkaline-earth-metal .popup-symbol:hover {
+  background-color: #ddff00;
+  color: black;
+  border: 2px solid black;
+}
+
+.popup.polyatomic-nonmetal .popup-symbol:hover {
+  background-color: #ffcc00;
+  color: black;
+  border: 2px solid black;
+}
+
+.popup.lanthanide .popup-symbol:hover {
+  background-color: #39ff14;
+  color: black;
+  border: 2px solid black;
+}
+
+.popup.actinide .popup-symbol:hover {
+  background-color: #00f5ff;
+  color: black;
+  border: 2px solid black;
+}
+
+/* popup hover effect */
+.popup.alkali-metal:hover {
+  color: #ff006e;
+  background-color: black;
+}
+
+.popup.diatomic-nonmetal:hover {
+  color: #3a86ff;
+  background-color: black;
+}
+
+.popup.noble-gas:hover {
+  color: #dc2525;
+  background-color: black;
+}
+
+.popup.metalloid:hover {
+  color: #00ffc6;
+  background-color: black;
+}
+
+.popup.transition-metal:hover {
+  color: #ff073a;
+  background-color: black;
+}
+
+.popup.post-transition-metal:hover {
+  color: #ff2dff;
+  background-color: black;
+}
+
+.popup.alkaline-earth-metal:hover {
+  color: #ddff00;
+  background-color: black;
+}
+
+.popup.polyatomic-nonmetal:hover {
+  color: #ffcc00;
+  background-color: black;
+}
+
+.popup.lanthanide:hover {
+  color: #39ff14;
+  background-color: black;
+}
+
+.popup.actinide:hover {
+  color: #00f5ff;
+  background-color: black;
+}
+
+/* popup effect */
+.popup.alkali-metal {
+  background-color: #ff006e;
+  color: black;
+}
+
+.popup.diatomic-nonmetal {
+  background-color: #3a86ff;
+  color: black;
+}
+
+.popup.noble-gas {
+  background-color: #dc2525;
+  color: black;
+}
+
+.popup.metalloid {
+  background-color: #00ffc6;
+  color: black;
+}
+
+.popup.transition-metal {
+  background-color: #ff073a;
+  color: black;
+}
+
+.popup.post-transition-metal {
+  background-color: #ff2dff;
+  color: black;
+}
+
+.popup.alkaline-earth-metal {
+  background-color: #ddff00;
+  color: black;
+}
+
+.popup.polyatomic-nonmetal {
+  background-color: #ffcc00;
+  color: black;
+}
+
+.popup.lanthanide {
+  background-color: #39ff14;
+  color: black;
+}
+
+.popup.actinide {
+  background-color: #00f5ff;
+  color: black;
+}
+
+/* popup close effect */
+.popup.alkali-metal .close-popup {
+  color: #ff006e;
+  background-color: black;
+}
+
+.popup.diatomic-nonmetal .close-popup {
+  color: #3a86ff;
+  background-color: black;
+}
+
+.popup.noble-gas .close-popup {
+  color: #dc2525;
+  background-color: black;
+}
+
+.popup.metalloid .close-popup {
+  color: #00ffc6;
+  background-color: black;
+}
+
+.popup.transition-metal .close-popup {
+  color: #ff073a;
+  background-color: black;
+}
+
+.popup.post-transition-metal .close-popup {
+  color: #ff2dff;
+  background-color: black;
+}
+
+.popup.alkaline-earth-metal .close-popup {
+  color: #ddff00;
+  background-color: black;
+}
+
+.popup.polyatomic-nonmetal .close-popup {
+  color: #ffcc00;
+  background-color: black;
+}
+
+.popup.lanthanide:hover .close-popup {
+  color: #39ff14;
+  background-color: black;
+}
+
+.popup.actinide .close-popup {
+  color: #00f5ff;
+  background-color: black;
+}
+
+/* close popup hover effect */
+.popup.alkali-metal .close-popup:hover {
+  background-color: #ff006e;
+  color: black;
+  transform: scale(1.7);
+}
+
+.popup.diatomic-nonmetal .close-popup:hover {
+  background-color: #3a86ff;
+  color: black;
+  transform: scale(1.7);
+}
+
+.popup.noble-gas .close-popup:hover {
+  background-color: #dc2525;
+  color: black;
+  transform: scale(1.7);
+}
+
+.popup.metalloid .close-popup:hover {
+  background-color: #00ffc6;
+  color: black;
+  transform: scale(1.7);
+}
+
+.popup.transition-metal .close-popup:hover {
+  background-color: #ff073a;
+  color: black;
+  transform: scale(1.7);
+}
+
+.popup.post-transition-metal .close-popup:hover {
+  background-color: #ff2dff;
+  color: black;
+  transform: scale(1.7);
+}
+
+.popup.alkaline-earth-metal .close-popup:hover {
+  background-color: #ddff00;
+  color: black;
+  transform: scale(1.7);
+}
+
+.popup.polyatomic-nonmetal .close-popup:hover {
+  background-color: #ffcc00;
+  color: black;
+  transform: scale(1.7);
+}
+
+.popup.lanthanide .close-popup:hover {
+  background-color: #39ff14;
+  color: black;
+  transform: scale(1.7);
+}
+
+.popup.actinide .close-popup:hover {
+  background-color: #00f5ff;
+  color: black;
+  transform: scale(1.7);
+}
